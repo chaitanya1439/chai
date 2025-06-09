@@ -12,7 +12,7 @@ app.use(express_1.default.json());
 app.post('/api/register', auth_1.register);
 app.post('/api/login', auth_1.login);
 app.get('/', (_req, res) => {
-    res.send('Hello World!');
+    res.status(200).json('Hello APIS');
 });
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
