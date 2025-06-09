@@ -9,7 +9,7 @@ const app = (0, express_1.default)();
 const port = 3001;
 // Add this line to parse JSON bodies!
 app.use(express_1.default.json());
-app.use('/auth', auth_1.default);
+app.use('/api', auth_1.default);
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
