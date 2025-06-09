@@ -13,8 +13,7 @@ app.post('/api/register', register);
 app.post('/api/login', login);
 
 app.get('/', (_req: Request, res: Response) => {
-    res.send('Hello World!');
-
+     res.status(200).json('Hello APIS');
 });
 
 app.listen(port, () => {
