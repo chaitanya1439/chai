@@ -1,9 +1,11 @@
 // src/controller/auth.ts
-import 'dotenv/config';
 import { Request, Response } from 'express';
 import { createClient } from '@supabase/supabase-js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // 1) Define your full DB schema in one place:
 interface Database {
