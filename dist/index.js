@@ -9,8 +9,8 @@ const app = (0, express_1.default)();
 const port = 3001;
 // Add this line to parse JSON bodies!
 app.use(express_1.default.json());
-app.post('/api/register', auth_1.register);
-app.post('/api/login', auth_1.login);
+app.post('/api/auth/register', auth_1.register);
+app.post('/api/auth/login', auth_1.login);
 app.get('/', (_req, res) => {
     res.status(200).json('Hello APIS');
 });
